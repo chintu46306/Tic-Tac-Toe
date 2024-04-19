@@ -9,7 +9,7 @@ function Card ({gameEnd, player, onPlay, index}){
         icon = <Icon name="circle" />
     }
     return (
-        <div className='card' onClick={() => !gameEnd && onPlay(index)}>
+        <div className='card' onClick={() => !gameEnd && player=="" && onPlay(index)}>
             {icon}
         </div>
     )

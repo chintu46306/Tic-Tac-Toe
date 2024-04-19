@@ -20,13 +20,19 @@ function Grid({numberOfCards}){
         setBoard([...board]);
         setTurn(!turn);
     }
+
+    function reset(){
+        setTurn(true);
+        setWinner(null);
+        setBoard(Array(numberOfCards).fill(""));
+    }
     
     return(
         <div className="grid-wrapper">{
             winner && (
                 <>
                     <h1 className="turn-highlight">Winner is: {winner}</h1>
-                    <button className="reset"> Reset Game</button>
+                    <button className="reset" onClick={reset}> Reset Game</button>
                 </>
             )
         }

@@ -1,13 +1,13 @@
-import { FaRegCircle,FaTimes,FaPen } from 'react-icons/fa';
+import { FaRegCircle, FaTimes, FaPen } from "react-icons/fa";
 
-function Icon({name}){
-    if(name == "circle"){
-        return <FaRegCircle />
-    }else if(name== "cross"){
-        return <FaTimes />
-    }else{
-        return <FaPen />
-    }
+function Icon({ name }) {
+  if (name == "circle") {
+    return <FaRegCircle />;
+  } else if (name == "cross") {
+    return <FaTimes />;
+  } else {
+    return <FaPen />;
+  }
 }
 
 export default Icon;
